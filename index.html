@@ -9,7 +9,8 @@
       html, body { height: 100%; margin: 0; padding: 0; }
       #map { height: 50%; }
     </style>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB5BEAn2yGdNA45oVIGzaXfCeaBq17qOOc">
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5BEAn2yGdNA45oVIGzaXfCeaBq17qOOc&callback=initialize">
     </script>
     <script>
     var map;
@@ -20,7 +21,7 @@
         zoom: 13
       });
     }
-    google.maps.event.addDomListener(window, 'load', initialize);
+    //google.maps.event.addDomListener(window, 'load', initialize);
       
     </script>
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
